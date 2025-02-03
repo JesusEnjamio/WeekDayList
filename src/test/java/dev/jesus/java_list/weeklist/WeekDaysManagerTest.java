@@ -38,6 +38,11 @@ public class WeekDaysManagerTest {
         assertThat(days, not(hasItem("Martes"))); 
         assertThat(days.size(), is(6)); 
     }
+    @Test
+    public void testGetSpecificDay() {
+        String day = weekDaysManager.getDay(2);
+        assertThat(day, is("Miércoles")); 
+    }
 
     
 }
