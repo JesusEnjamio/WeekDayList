@@ -34,6 +34,9 @@ public class WeekDaysManager {
     public boolean dayExists(String day) {
         return days.contains(day);
     }
+    public void sortDays() {
+        Collections.sort(days);
+    }
     
 
     
