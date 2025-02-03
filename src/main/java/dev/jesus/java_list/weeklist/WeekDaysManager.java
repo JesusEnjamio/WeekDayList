@@ -16,7 +16,9 @@ public class WeekDaysManager {
         days.clear();
         Collections.addAll(days, "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
     }
-    
+    public List<String> getWeekDays() {
+        return new ArrayList<>(days);
+    }
     
 
     
