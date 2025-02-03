@@ -19,6 +19,9 @@ public class WeekDaysManager {
     public List<String> getWeekDays() {
         return new ArrayList<>(days);
     }
+    public int getSize() {
+        return days.size();
+    }
     
 
     
