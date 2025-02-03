@@ -48,6 +48,13 @@ public class WeekDaysManagerTest {
         assertThat(weekDaysManager.dayExists("Jueves"), is(true));
         assertThat(weekDaysManager.dayExists("Funday"), is(false));
     }
+    @Test
+    public void testSortDaysAlphabetically() {
+        weekDaysManager.sortDays();
+        List<String> sortedDays = weekDaysManager.getWeekDays();
+        assertThat(sortedDays, contains("Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado", "Viernes"));
+    }
+
 
     
 }
