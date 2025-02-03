@@ -43,6 +43,11 @@ public class WeekDaysManagerTest {
         String day = weekDaysManager.getDay(2);
         assertThat(day, is("Miércoles")); 
     }
+    @Test
+    public void testDayExists() {
+        assertThat(weekDaysManager.dayExists("Jueves"), is(true));
+        assertThat(weekDaysManager.dayExists("Funday"), is(false));
+    }
 
     
 }
