@@ -22,6 +22,9 @@ public class WeekDaysManager {
     public int getSize() {
         return days.size();
     }
+    public boolean removeDay(String day) {
+        return days.remove(day);
+    }
     
 
     
