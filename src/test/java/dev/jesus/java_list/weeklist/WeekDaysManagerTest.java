@@ -31,6 +31,13 @@ public class WeekDaysManagerTest {
         int size = weekDaysManager.getSize();
         assertThat(size, is(7)); 
     }
+    @Test
+    public void testRemoveDay() {
+        weekDaysManager.removeDay("Martes");
+        List<String> days = weekDaysManager.getWeekDays();
+        assertThat(days, not(hasItem("Martes"))); 
+        assertThat(days.size(), is(6)); 
+    }
 
     
 }
