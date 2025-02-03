@@ -54,6 +54,12 @@ public class WeekDaysManagerTest {
         List<String> sortedDays = weekDaysManager.getWeekDays();
         assertThat(sortedDays, contains("Domingo", "Jueves", "Lunes", "Martes", "Miércoles", "Sábado", "Viernes"));
     }
+    @Test
+    public void testClearWeekDays() {
+        weekDaysManager.clearWeekDays();
+        List<String> days = weekDaysManager.getWeekDays();
+        assertThat(days, is(empty()));
+    }
 
 
     
