@@ -1,5 +1,17 @@
 package dev.jesus.java_list.weeklist;
 
-public class WeekDaysManager {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
+public class WeekDaysManager {
+    private List<String> days;
+
+    public WeekDaysManager() {
+        days = new ArrayList<>();
+        createWeekDays();
+
+    }
+  
+    
 }
