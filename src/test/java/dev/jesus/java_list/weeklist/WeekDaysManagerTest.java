@@ -12,6 +12,7 @@ public class WeekDaysManagerTest {
     @BeforeEach
     public void setUp() {
         weekDaysManager = new WeekDaysManager();
+        
     }
 
     @Test
@@ -20,5 +21,11 @@ public class WeekDaysManagerTest {
         List<String> weekDays = weekDaysManager.getWeekDays();
         assertThat(weekDays, contains("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"));
     }
+    @Test
+    public void testGetWeekDays() {
+        List<String> days = weekDaysManager.getWeekDays();
+        assertThat(days, contains("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"));
+    }
+
     
 }
