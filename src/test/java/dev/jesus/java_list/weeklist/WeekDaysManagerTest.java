@@ -17,7 +17,7 @@ public class WeekDaysManagerTest {
 
     @Test
     public void testCreateWeekDays() {
-        // Verificamos que al crear una nueva instancia, los días estén correctamente inicializados
+       
         List<String> weekDays = weekDaysManager.getWeekDays();
         assertThat(weekDays, contains("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"));
     }
@@ -25,6 +25,11 @@ public class WeekDaysManagerTest {
     public void testGetWeekDays() {
         List<String> days = weekDaysManager.getWeekDays();
         assertThat(days, contains("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"));
+    }
+    @Test
+    public void testGetSize() {
+        int size = weekDaysManager.getSize();
+        assertThat(size, is(7)); 
     }
 
     
